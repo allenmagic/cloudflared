@@ -20,7 +20,7 @@ COPY . .
 RUN make cloudflared
 
 # use a distroless base image with glibc
-FROM m6qwfgl8c90gba-gcr.xuanyuan.run/distroless/base-debian12:latest
+FROM m6qwfgl8c90gba-gcr.xuanyuan.run/distroless/static-debian12:nonroot
 
 LABEL org.opencontainers.image.source="https://github.com/cloudflare/cloudflared"
 
